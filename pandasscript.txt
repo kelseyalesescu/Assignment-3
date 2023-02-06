@@ -1,0 +1,12 @@
+pandas script
+cd desktop
+#1: sed 's/Zoo/d' pandas.txt >> pandasnozoo.txt
+#2: sort -k2 pandas.txt | awk '{print$1, $4, $2}' >> pandassorted.txt 
+#3: awk '{print $5}' pandas.txt | sort> alphabetically.txt
+#4: sed "s/female/F/" pandas.txt | sed "s/male/M/" >> MandFpandas.txt
+#5: grep "female" pandas.txt | grep -c "October"
+#6: nl pandas.txt >> pandasnumbered.txt
+#7: sed -n '1p; 6p; 17p' pandas.txt >> pandas1617.txt
+#8: grep -i "x" pandas.txt >> pandasx
+#9: awk '{ a[$5]++ } END { for (b in a) { print b } }' pandas.txt > onlyonelocation.txt
+#10: sort -k4 -n pandas.txt | awk '$4 <= 10' |awk '{print $1, $4}' > pandaslastfile.txt
