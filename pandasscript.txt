@@ -1,6 +1,6 @@
 pandas script
 cd desktop
-#1: sed 's/Zoo/g' pandas.txt >> pandasnozoo.txt
+#1: sed 's/Zoo//g' pandas.txt >> pandasnozoo.txt
 #2: sort -k2 pandas.txt | awk '{print$1, $4, $2}' >> pandassorted.txt 
 #3: awk '{print $5}' pandas.txt | sort> alphabetically.txt
 #4: sed "s/female/F/" pandas.txt | sed "s/male/M/" >> MandFpandas.txt
